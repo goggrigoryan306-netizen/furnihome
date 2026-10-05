@@ -1,0 +1,812 @@
+/* =========================================================
+   FURNIHOME ABOUT PAGE
+   Premium Furniture Brand Style
+========================================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  color: #29211b;
+
+  background:
+    radial-gradient(
+      circle at 10% 40%,
+      rgba(185, 142, 99, 0.1),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 75%,
+      rgba(100, 72, 48, 0.06),
+      transparent 25%
+    ),
+    linear-gradient(
+      145deg,
+      #faf9f7 0%,
+      #f3efe9 50%,
+      #faf9f7 100%
+    );
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+
+  min-height: 560px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  padding:
+    135px 25px
+    90px;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(23, 17, 13, 0.72),
+      rgba(49, 36, 26, 0.48)
+    ),
+    url(
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=90"
+    )
+    center / cover no-repeat;
+}
+
+
+/* DARK VIGNETTE */
+
+.about-hero::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 10%,
+      rgba(8, 6, 5, 0.38)
+      100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* GOLD LINE */
+
+.about-hero::before {
+  content: "";
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 65px;
+  height: 2px;
+
+  margin-bottom: 26px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #d1a36d,
+      transparent
+    );
+
+  box-shadow:
+    0 0 20px
+    rgba(209, 163, 109, 0.35);
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.about-hero h1 {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    0 0 22px;
+
+  color: white;
+
+  font-size: clamp(
+    52px,
+    7vw,
+    88px
+  );
+
+  line-height: 0.95;
+
+  font-weight: 500;
+
+  letter-spacing: -3px;
+
+  text-shadow:
+    0 12px 35px
+    rgba(0, 0, 0, 0.2);
+
+  animation:
+    aboutHeroTitle
+    0.75s ease both;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.about-hero p {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 680px;
+
+  margin: 0;
+
+  color:
+    rgba(255, 255, 255, 0.77);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  animation:
+    aboutHeroText
+    0.9s ease both;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-content {
+  position: relative;
+
+  width: min(
+    1250px,
+    90%
+  );
+
+  margin: 0 auto;
+
+  padding:
+    115px 0
+    130px;
+}
+
+
+/* =========================================================
+   LARGE DECORATIVE BRAND TEXT
+========================================================= */
+
+.about-content::before {
+  content: "FURNIHOME";
+
+  position: absolute;
+
+  z-index: 0;
+
+  top: 30px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  color:
+    rgba(71, 49, 32, 0.035);
+
+  font-size: clamp(
+    70px,
+    12vw,
+    170px
+  );
+
+  font-weight: 800;
+
+  letter-spacing: 10px;
+
+  white-space: nowrap;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TEXT AREA
+========================================================= */
+
+.about-text {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 890px;
+
+  margin:
+    0 auto 75px;
+
+  padding:
+    45px 45px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(132, 98, 68, 0.12);
+
+  border-radius: 26px;
+
+  background:
+    rgba(255, 255, 255, 0.78);
+
+  box-shadow:
+    0 18px 55px
+    rgba(50, 37, 28, 0.055);
+
+  backdrop-filter:
+    blur(10px);
+
+  animation:
+    aboutFadeUp
+    0.8s ease both;
+}
+
+
+/* small gold decoration */
+
+.about-text::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 50%;
+
+  width: 90px;
+  height: 3px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius:
+    0 0 20px 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #825c3d,
+      #c49563,
+      #825c3d
+    );
+}
+
+
+/* =========================================================
+   STORY LABEL
+========================================================= */
+
+.about-text > p:first-child {
+  margin:
+    0 0 15px;
+
+  color: #aa7d52;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3.2px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   STORY TITLE
+========================================================= */
+
+.about-text h2 {
+  max-width: 820px;
+
+  margin:
+    0 auto 27px;
+
+  color: #2b221b;
+
+  font-size: clamp(
+    34px,
+    4vw,
+    52px
+  );
+
+  line-height: 1.16;
+
+  font-weight: 600;
+
+  letter-spacing: -1.6px;
+}
+
+
+/* =========================================================
+   STORY DESCRIPTION
+========================================================= */
+
+.about-text >
+p:not(:first-child) {
+  max-width: 730px;
+
+  margin:
+    0 auto 17px;
+
+  color: #786c62;
+
+  font-size: 14px;
+
+  line-height: 1.95;
+}
+
+.about-text >
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.about-stats {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  animation:
+    aboutFadeUp
+    1s ease both;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.about-stats > div {
+  position: relative;
+
+  min-height: 190px;
+
+  overflow: hidden;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(126, 93, 64, 0.13);
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.97),
+      rgba(248, 244, 238, 0.94)
+    );
+
+  box-shadow:
+    0 14px 38px
+    rgba(48, 35, 26, 0.055);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* decorative circle */
+
+.about-stats > div::before {
+  content: "";
+
+  position: absolute;
+
+  width: 140px;
+  height: 140px;
+
+  right: -60px;
+  bottom: -65px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(181, 137, 94, 0.08);
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+/* top gold line */
+
+.about-stats > div::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  width: 55px;
+  height: 3px;
+
+  border-radius:
+    0 0 10px 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #936943,
+      #c69968
+    );
+}
+
+
+/* =========================================================
+   STAT HOVER
+========================================================= */
+
+.about-stats > div:hover {
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(157, 115, 76, 0.26);
+
+  box-shadow:
+    0 24px 55px
+    rgba(48, 35, 26, 0.1);
+}
+
+.about-stats > div:hover::before {
+  transform:
+    scale(1.2);
+}
+
+
+/* =========================================================
+   STAT NUMBER
+========================================================= */
+
+.about-stats strong {
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 9px;
+
+  color: #332820;
+
+  font-size: 44px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   STAT TEXT
+========================================================= */
+
+.about-stats span {
+  position: relative;
+
+  z-index: 2;
+
+  color: #94867b;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   OPTIONAL DIFFERENT CENTER CARD
+========================================================= */
+
+.about-stats > div:nth-child(2) {
+  color: white;
+
+  border-color:
+    rgba(255, 255, 255, 0.05);
+
+  background:
+    linear-gradient(
+      145deg,
+      #332820,
+      #1c1612
+    );
+
+  box-shadow:
+    0 18px 45px
+    rgba(35, 26, 20, 0.16);
+}
+
+.about-stats >
+div:nth-child(2)::before {
+  background:
+    rgba(202, 158, 111, 0.08);
+}
+
+.about-stats >
+div:nth-child(2)
+strong {
+  color: white;
+}
+
+.about-stats >
+div:nth-child(2)
+span {
+  color:
+    rgba(255, 255, 255, 0.5);
+}
+
+.about-stats >
+div:nth-child(2)::after {
+  background:
+    linear-gradient(
+      90deg,
+      #b6804e,
+      #e1b883
+    );
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes aboutHeroTitle {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes aboutHeroText {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (
+  max-width: 900px
+) {
+
+  .about-hero {
+    min-height: 470px;
+
+    padding:
+      120px 30px
+      75px;
+  }
+
+  .about-content {
+    padding:
+      90px 0
+      100px;
+  }
+
+  .about-text {
+    padding:
+      38px 30px;
+
+    margin-bottom: 55px;
+  }
+
+  .about-stats {
+    grid-template-columns:
+      1fr;
+  }
+
+  .about-stats > div {
+    min-height: 150px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (
+  max-width: 600px
+) {
+
+  .about-hero {
+    min-height: 410px;
+
+    padding:
+      105px 20px
+      60px;
+  }
+
+  .about-hero::before {
+    width: 45px;
+
+    margin-bottom: 20px;
+  }
+
+  .about-hero h1 {
+    margin-bottom: 18px;
+
+    font-size: 47px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .about-hero p {
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+  .about-content {
+    width: 91%;
+
+    padding:
+      65px 0
+      80px;
+  }
+
+  .about-content::before {
+    top: 20px;
+
+    font-size: 53px;
+
+    letter-spacing: 4px;
+  }
+
+  .about-text {
+    padding:
+      30px 19px;
+
+    margin-bottom: 45px;
+
+    border-radius: 19px;
+  }
+
+  .about-text h2 {
+    font-size: 31px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-text >
+  p:not(:first-child) {
+    font-size: 13px;
+
+    line-height: 1.85;
+  }
+
+  .about-stats {
+    gap: 10px;
+  }
+
+  .about-stats > div {
+    min-height: 135px;
+
+    border-radius: 18px;
+  }
+
+  .about-stats strong {
+    font-size: 37px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (
+  max-width: 400px
+) {
+
+  .about-hero h1 {
+    font-size: 41px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+}
